@@ -103,7 +103,7 @@ abstract class Entity implements \JsonSerializable
      * @return string
      */
    #[\ReturnTypeWillChange]
-   public function jsonSerialize()
+   public function jsonSerialize(): mixed
     {
         $json = array();
         

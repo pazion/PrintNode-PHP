@@ -2,6 +2,7 @@
 
 namespace PrintNode;
 
+#[AllowDynamicProperties]
 abstract class EntityDynamic extends Entity
 {
     /**
@@ -66,7 +67,7 @@ abstract class EntityDynamic extends Entity
      * @return string
      */
     #[\ReturnTypeWillChange]
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = [];
 
